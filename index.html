@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Regina Colpaert</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	</head>
+	<script language="JavaScript">
+		if (top.location != "http://www.reginacolpaert.com.br/")
+			top.location = "http://www.reginacolpaert.com.br/";
+		document.onmousedown = mdHandler;
+		function mdHandler( e ) {
+			if ( window.event ) {
+				e = window.event;
+				if ( e.button != 1 ) {
+					return false;
+				}
+			} else {
+				if ( e.which != 1 ) {
+					return false;
+				}
+			}
+			return true;
+		}
+		document.oncontextmenu = new Function("return false;")
+	</script>
+	<body bgcolor=#EE1C23 text=#FFFFFF>
+		<h1><center>EM BREVE</center></h1><br>
+		<center><img height=400px width=400px src=images/front.png></img></center>
+	</body>
+</html>
